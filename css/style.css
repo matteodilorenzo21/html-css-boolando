@@ -1,6 +1,97 @@
-/* Reset properties */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* GENERICS */
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* UTILS */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.border {
+    border: 2px dashed #000;
+}
+
+/* HEADER */
+
+/* MAIN */
+.row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: calc(100% / 3 - 15px);
+    height: 100%;
+}
+
+.card {
+    height: 550px;
+    position: relative;
+    cursor: pointer;
+}
+
+.img-area {
+    position: relative;
+    height: 100%;
+}
+
+.img-area > img {
+    position: absolute;
+    max-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.img-area img.img-front:hover {
+    opacity: 0;
+}
+
+.card-tags {
+    position: absolute;
+    display: flex;
+
+}
+
+.position-bottom-left {
+    bottom: 5%;
+    left: 2%;
+}
+
+.discount, .susteinable {
+    padding: 3px 6px;
+    font-weight: 600;
+}
+.discount {
+    color: #fff;
+    background-color: #FF0000;
+    bottom: 5%;
+}
+
+.susteinable {
+    color: #fff;
+    background-color: #008000;
+    left: 15%;
+}
+
+.wish-btn {
+    position: absolute;
+    top: 2%;
+    right: 0;
+    color: #000;
+    background-color: #fff;
+    font-size: 45px;
+    padding: 5px 15px;
+}
+
+.wish-btn:hover {
+    color: #FF0000;     
 }
