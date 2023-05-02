@@ -7,7 +7,8 @@
 
 /* GENERICS */
 body {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 120px;
 }
 
 /* UTILS */
@@ -35,7 +36,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
     z-index: 1;
 }
 
@@ -65,4 +66,82 @@ header {
 
 .navbar-actions ul {
     justify-content: right;
+}
+
+/* LAYOUT */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.column {
+    flex-basis: calc(100% / 3);
+    padding: 10px;
+}
+
+/* CARD TILES */
+.card-img {
+    position: relative;
+    cursor: pointer;
+}
+
+.card-img img {
+    max-width: 100%;
+    display: block;
+}
+
+.card-img img.back-pic {
+    display: none;
+}
+
+.card-img:hover img.back-pic {
+    display: block;
+}
+
+.card-img:hover img.front-pic {
+    display: none;
+}
+
+.card-img .wish {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img .wish:hover {
+    color: #ff0000;
+}
+
+/* CARD BADGES */
+.card-badges {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+}
+
+.badge {
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.badge.badge-discount {
+    background-color: #ff0000;
+}
+
+.badge.badge-eco {
+    background-color: darkgreen;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #ff0000;
 }
