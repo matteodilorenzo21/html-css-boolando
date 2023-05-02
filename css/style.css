@@ -57,7 +57,7 @@ header {
     margin: 0 auto;
 }
 
-.navbar ul {
+ul {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -144,4 +144,26 @@ header {
 .product-price {
     font-weight: bold;
     color: #ff0000;
+}
+
+/* FOOTER */
+footer {
+    color: #fff;
+    background-color: #212121;
+    height: 150px;
+    padding: 10px;
+    box-shadow: 0 1px 3px #555;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footer-navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    margin-bottom: 15px;
 }
